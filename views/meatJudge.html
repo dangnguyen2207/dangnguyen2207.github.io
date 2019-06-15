@@ -1,4 +1,4 @@
-{% extends "layout.shtml" %}
+﻿{% extends "layout.shtml" %}
 
 {% block nav %}
 <li>Home</li>
@@ -12,84 +12,90 @@
 <div class="wdn-inner-wrapper">
 <meta charset="UTF-8">
 <link rel="stylesheet" href="/public/styles.css" />
-<body style="height: 100px;">
-		<div class="cutMenuBackground">
-			<select id = "cutMenu"></select>
-		</div>
-		
-		<div id= "frameList" style = "display: -webkit-box;">
-			<div style="width: 25%;">
-				<iframe id="api-frame-0" width="100%" height="500px" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-				<div style="text-align: center;"> Model 1:
-					<select name="drop1" id="drop1"  onchange="javascript: checkUnique(this.id);">
-						<option selected disabled>Select Grade</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>     
-					</select>
-				</div>
-			</div>
-			
-			<div style="width: 25%;">
-				<iframe id="api-frame-1" width="100%" height="500px" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-				<div style="text-align: center;"> Model 2:
-					<select name="drop2" id="drop2" onchange="checkUnique(this.id);">
-						<option selected disabled>Select Grade</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>   
-					</select>
-				</div>
-			</div>			
-			<div style="width: 25%;">	
-				<iframe id="api-frame-2" width="100%" height="500px" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-				<div style="text-align: center;"> Model 3:
-					<select name="drop3" id="drop3" onchange="checkUnique(this.id);"> 
-						<option selected disabled>Select Grade</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>  
-					</select>
-				</div>
-			</div>
-			
-			<div style="width: 25%;">
-				<iframe id="api-frame-3" width="100%" height="500px" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-				<div style="text-align: center;"> Model 4:
-					<select name="drop4" id="drop4" onchange="checkUnique(this.id);">
-						<option selected disabled>Select Grade</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>  
-					</select>
-				</div>
-			</div>
-			
-		</div>
-   <br/>
-   <div>
-	<strong>Select each cut's quality in the dropdown boxes and click submit to check your answers.</strong>
-	<a target="_blank" href="javascript:void(0)" title="Green box for correct answer, Red box for incorrect"><img src="https://shots.jotform.com/kade/Screenshots/blue_question_mark.png" style="width: 15px;height: 15px"/></a>
-   </div>
-  
-   	<div id="notification"></div>
-	<br/>
-	<div id = "alert"></div>
-	
+<body>
+    style="height: 100px;">
+
+    <div class="cutMenuBackground">
+        <select id="cutMenu"></select>
+    </div>
+
+    <div id="frameList" style="display: -webkit-box;">
+        <div style="width: 25%;">
+            <iframe id="api-frame-0" width="100%" height="500px" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <div style="text-align: center;">
+                Model 1:
+                <select name="drop1" id="drop1" onchange="javascript: checkUnique(this.id);">
+                    <option selected disabled>Select Grade</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </div>
+
+        <div style="width: 25%;">
+            <iframe id="api-frame-1" width="100%" height="500px" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <div style="text-align: center;">
+                Model 2:
+                <select name="drop2" id="drop2" onchange="checkUnique(this.id);">
+                    <option selected disabled>Select Grade</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </div>
+        <div style="width: 25%;">
+            <iframe id="api-frame-2" width="100%" height="500px" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <div style="text-align: center;">
+                Model 3:
+                <select name="drop3" id="drop3" onchange="checkUnique(this.id);">
+                    <option selected disabled>Select Grade</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </div>
+
+        <div style="width: 25%;">
+            <iframe id="api-frame-3" width="100%" height="500px" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <div style="text-align: center;">
+                Model 4:
+                <select name="drop4" id="drop4" onchange="checkUnique(this.id);">
+                    <option selected disabled>Select Grade</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <br />
+    <div>
+        <strong>Select each cut's quality in the dropdown boxes and click submit to check your answers.</strong>
+        <a target="_blank" href="javascript:void(0)" title="Green box for correct answer, Red box for incorrect"><img src="https://shots.jotform.com/kade/Screenshots/blue_question_mark.png" style="width: 15px;height: 15px" /></a>
+    </div>
+
+    <div id="notification"></div>
+    <br />
+    <div id="alert"></div>
+
 
     <button class="camera-button" id="checkButton" type="button"> Submit </button>
-	
-	<button class="camera-button" id="next" style="float: right;">Next Set</button>
-	<button class="camera-button" id="previous" style="float: right;">Previous Set</button>
-	<br/>
-	
-</div>
-</div>
+
+    <button class="camera-button" id="next" style="float: right;">Next Set</button>
+    <button class="camera-button" id="previous" style="float: right;">Previous Set</button>
+    <br />
 </body>
+</div>
+</div>
+
 </html>
 
 {% endblock content %}

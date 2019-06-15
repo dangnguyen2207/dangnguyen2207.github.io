@@ -1,0 +1,44 @@
+{% extends "layout.shtml" %}
+
+{% block nav %}
+<li>Home</li>
+{% endblock nav %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script src = "functions.js" type = "text/javascript"></script> 
+	<script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxdata.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxmenu.js"></script>
+	<script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+	<script type="text/javascript" src="../../scripts/demos.js"></script>
+	<script type="text/javascript" src="../../scripts/jquery-1.11.1.min.js"></script>
+</head>
+
+<body style="height: 100px;">
+	<div class="wdn-band">
+		<div class="wdn-inner-wrapper">
+			<div style="height:500px;">
+				<img src="/images/Beef_background.png"></img>
+				<div style= "text-align: center;">
+					<a style = "width: 33%;" href="/model"><button class = "camera-button"> View Models </button></a>
+					<a style = "width: 33%;" href="/quiz"><button class = "camera-button"> Quiz </button></a>
+					<a style = "width: 33%;" href="/meatJudge"><button class = "camera-button"> Judge Cuts </button></a>
+				</div>
+			</div>
+			
+		</div>   
+
+	</div>
+</body>
+</html>
+
+
+{% endblock content %}
+
+

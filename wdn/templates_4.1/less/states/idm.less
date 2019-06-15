@@ -1,0 +1,57 @@
+.wdn-resource-login-trigger {
+
+    @media @bp-nav-hidden {
+
+		.nav-scrolling & {
+			position: fixed;
+			top: 0;
+			z-index: (@nav-z-index + 1);
+			transition: right @nav-transition-duration ease;
+		}
+
+		.nav-scrolling #wdn_menu_toggle:checked ~ .wdn-content-slide & {
+			right: -@nav-width;
+		}
+    }
+}
+
+.loggedin {
+
+    &.wdn-resource-login-trigger {
+
+		@media @bp-nav-hidden {
+            width: 60%;
+            right: 0;
+        }
+	}
+
+	#wdn_idm_toggle_label {
+        white-space: nowrap;
+        background-repeat: no-repeat;
+        background-size: contain;
+    	background-position: right center;
+
+        &:before {
+            content: '';
+        }
+
+		@media @bp-nav-hidden {
+            padding-right: 50px;
+		}
+
+		@media @bp-nav-full {
+            padding-right: 40px;
+            cursor: pointer;
+		}
+
+		@media @bp768 {
+            padding-right: 50px;
+		}
+	}
+
+    #wdn_idm_toggle:checked ~ .wdn-idm-options {
+        .is-visible();
+        transform: scale(1);
+        transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+    }
+}

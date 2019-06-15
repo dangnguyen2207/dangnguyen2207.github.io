@@ -1,0 +1,137 @@
+table {
+    width: 100%;
+    max-width: 100%;
+    line-height: @base-line-height-sm;
+    .base-font();
+    border: 1px solid @ui04;
+
+    @media @bp768 {
+        line-height: @base-line-height-lg;
+    }
+
+    caption {
+        .brand-font();
+        .rem(38,41);
+        line-height: 1;
+        margin-bottom: 0.75em;
+    }
+
+    th {
+        .wdn-sans-caps();
+        .rem(12,13);
+        padding: 1.2307em 1.0833em 1.0833em;
+        line-height: 1.333;
+        border-top: 1px solid @ui04;
+        background-color: darken(@ui01, 2%);
+
+        @media @bp768 {
+            padding: 1.2307em 1.2307em 1em;
+        }
+    }
+
+    th, td {
+        text-align: left;
+    }
+
+    td {
+        font-weight: normal;
+        padding: 0.92307em 1em 0.7692em;
+
+        @media @bp768 {
+            padding: 0.75em 1em 0.602em;
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-of-type(even) {
+                background-color: @ui01;
+            }
+
+            &:nth-of-type(odd) {
+                background-color: transparent;
+            }
+        }
+
+        td {
+            border-top: 1px solid @ui04;
+        }
+
+        th {
+            text-align: left;
+        }
+    }
+}
+
+table.wdn_responsive_table {
+    thead tr {
+        display: none;
+
+        @media @bp768 {
+            display: table-row;
+        }
+    }
+
+    th, td {
+        text-align: center;
+        display: block;
+
+        @media @bp768 {
+            display: table-cell;
+        }
+    }
+
+    tbody {
+        tr {
+            @media @bp-under768w {
+                &:nth-of-type(even) {
+                    background-color: transparent;
+                }
+            }
+
+            &:first-child th {
+                border-top-width: 0;
+
+                @media @bp768 {
+                    border-top-width: 1px;
+                }
+            }
+        }
+
+        th {
+            text-align: left;
+        }
+
+        td {
+            text-align: left;
+
+            @media @bp768 {
+                text-align: center;
+            }
+
+            &:before {
+                display: block;
+                font-weight: bold;
+                content: attr(data-header);
+
+                @media @bp768 {
+                    display: none !important;
+                }
+            }
+
+            &:empty {
+                display: none;
+
+                @media @bp768 {
+                    display: table-cell;
+                }
+            }
+        }
+    }
+
+    &.flush-left {
+        th, td {
+            text-align: left;
+        }
+    }
+}

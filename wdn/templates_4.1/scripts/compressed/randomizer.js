@@ -1,2 +1,0 @@
-define(["jquery","wdn"],function(n,i){var e=".wdn_randomizer";return{initialize:function(){n(function(){n(e).each(function(){var i=n(this).children(),e=i.length;i.hide().eq(Math.floor(Math.random()*e)).show()}).removeClass("wdn-fouc-fix")})}}});
-//# sourceMappingURL=randomizer.js.map

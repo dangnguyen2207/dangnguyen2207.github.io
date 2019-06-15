@@ -201,7 +201,7 @@ if(/meatJudge/.test(document.location)){
 
 	function getHints(fileName){
 		var $ = require('jquery');
-		$.get("/hints_and_reasons/" + fileName + ".txt", function(data) {
+		$.get("/public/hints_and_reasons/" + fileName + ".txt", function(data) {
 				$("#alert").append('<div class ="alert">Hints: <br></br>'+data+'</span> <div>').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
 			}).fail(function() {
 				$("#alert").empty();
@@ -210,7 +210,7 @@ if(/meatJudge/.test(document.location)){
 
 	function getReasons(fileName){
 		var $ = require('jquery');
-		$.get("/hints_and_reasons/" + fileName + ".txt", function(data) {
+		$.get("/public/hints_and_reasons/" + fileName + ".txt", function(data) {
 				$("#alert").append('<div class ="alert success"> Reasons: <br></br>'+data+'</span> <div>').fadeTo('slow', 0.5).fadeTo('slow', 1.0);
 			}).fail(function() {
 				$("#alert").empty();
@@ -249,7 +249,7 @@ if(/meatJudge/.test(document.location)){
 	}
 
 	$(document).ready(function() {
-		$.getJSON("meatJudging.json", function(data) { //Make file pulling more dynamic
+		$.getJSON("/public/meatJudging.json", function(data) { //Make file pulling more dynamic
 			$.each(data, function(i, field) {
 				//	console.log(field);
 					//console.log("Cuts: " + field.id + "\n");

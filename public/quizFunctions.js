@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON("BeefVer1.json", function(json) { //Make file pulling more dynamic
+    $.getJSON("/public/BeefVer1.json", function(json) { //Make file pulling more dynamic
         // prepare the data
         var source = {
             datatype: "json",

@@ -1,0 +1,108 @@
+
+div.interactive-model button {
+    display: block;
+    padding: 5px 5%;
+    text-align: left;
+    background-color: #d00000;
+    color: #ffffff;
+    border: none;
+}
+.button a:hover {
+    background-color: #f1f1f1
+}
+.dropbtn {
+    background-color: #d00000;
+    color: white;
+    padding: 5px 5%;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover,
+.dropbtn:focus {
+    color: #f35b1f;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d00000;
+    outline-color: none;
+    min-width: 160px;
+    overflow: auto;
+}
+.dropdown-content a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    outline: none;
+    cursor: pointer;
+}
+.dropdown-content a:hover {
+    background-color: #ffffff;
+    color: #F35B1F;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.show {
+    display: block;
+}
+/* Menu General Styles */
+
+.menuBackground {
+    background: brown;
+}
+.dropDownMenu a {
+    color: #FFF;
+}
+.dropDownMenu,
+.dropDownMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.dropDownMenu li {
+    position: relative;
+}
+.dropDownMenu a {
+    white-space: nowrap;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+}
+.dropDownMenu a:hover {
+    background: #000;
+}
+/* Level 1 Drop Down Menu */
+
+.dropDownMenu > li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+    /* solve the 4 pixels spacing between list-items */
+}
+.dropDownMenu > li:first-child {
+    margin-left: 0;
+}
+.dropDownMenu > li > a {} .dropDownMenu > li > a:hover {}
+/* Level 2 */
+
+.dropDownMenu > li > ul {
+    text-align: left;
+    width: auto;
+    /* change auto value with 200px if you want a bigger menu */
+    
+    display: none;
+    background: #d00000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.dropDownMenu > li:hover > ul {
+    display: block;
+}
+.dropDownMenu ul li a {} .dropDownMenu ul li a:hover {}

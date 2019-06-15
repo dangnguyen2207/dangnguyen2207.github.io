@@ -1,0 +1,169 @@
+{% extends "layout.shtml" %}
+
+{% block nav %}
+<li>Model</li>
+{% endblock nav %}
+
+{% block content %}
+<div class="wdn-band">
+<div class="wdn-inner-wrapper">
+
+<style>
+.dropbtn {
+    background-color: #d00000;
+    color: white;
+    padding: 5px 5%;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    color: #f35b1f;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d00000;
+	outline-color: none;
+    min-width: 160px;
+    overflow: auto;
+    
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+	outline: none;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+	background-color: #ffffff;
+	color: #F35B1F;
+}
+
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+.show {display:block;}
+</style>
+
+<style>
+/* Menu General Styles */
+.menuBackground {
+	background: brown;
+}
+.dropDownMenu a {
+	color: #FFF;
+}
+.dropDownMenu,
+.dropDownMenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.dropDownMenu li {
+	position: relative;
+}
+.dropDownMenu a {
+	white-space: nowrap;
+	padding: 10px 20px;
+	display: block;
+	text-decoration: none;
+}
+.dropDownMenu a:hover {
+	background: #000;
+}
+
+
+/* Level 1 Drop Down Menu */
+.dropDownMenu > li {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: -4px; /* solve the 4 pixels spacing between list-items */
+}
+.dropDownMenu > li:first-child {
+	margin-left: 0;
+}
+.dropDownMenu > li > a {}
+.dropDownMenu > li > a:hover {}
+/* Level 2 */
+.dropDownMenu > li > ul {
+	text-align: left;
+	width: auto; /* change auto value with 200px if you want a bigger menu */
+	display: none;
+	background: #d00000;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+.dropDownMenu > li:hover > ul {
+	display: block;
+}
+.dropDownMenu ul li a {}
+.dropDownMenu ul li a:hover {}
+</style>
+
+
+</head>
+<body>
+
+<script src = "functions.js" type = "text/javascript"></script> 
+
+
+<div class = "interactive-model">
+	<div class="dropdown">
+	<button id = "ddButton" class="dropbtn">Beef</button>
+		<div id="myDropdown" class="dropdown-content">
+            <script type="text/javascript">
+              var sketchArray = {"Boneless Brisket": "3f26e3a2fc7c4549990b5509fa5cb727", "Brisket": "0b2e9385f33a407cab172ae1a110c357", "Brisket Bone": "41a60ef34b634bbc8361ba70dd3e1443", "Short Loin": "3a1e126a3ac24ea38309c11eb671c792"};
+			  GenerateButtons(sketchArray); 	
+            </script> 	
+		</div>
+	</div>
+	<div class = "menuBackground">
+		<div class = "center myMenu">
+			<ul class = "dropDownMenu">
+				<li><a href="#">Primals</a>
+					<ul>
+					<script type="text/javascript">
+					var sketchArray = {"Boneless Brisket": "3f26e3a2fc7c4549990b5509fa5cb727", "Brisket": "0b2e9385f33a407cab172ae1a110c357", "Brisket Bone": "41a60ef34b634bbc8361ba70dd3e1443", "Short Loin": "3a1e126a3ac24ea38309c11eb671c792"};
+					GenerateButtons(sketchArray); 	
+					</script>
+					</ul>
+				</li>
+				<li><a href ="#">Sub-Primals</a>
+					<!-- Filler Content goes here -->
+				</li>
+		</div>
+	</div>
+	<div class = "sketchfab-embed-wrapper"><iframe id="skecthFrame" width="100%" height="600" src="https://sketchfab.com/models/41a60ef34b634bbc8361ba70dd3e1443/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+	</div>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+    $("#ddButton").hover(function(){
+		$(this).slideToggle(300);
+		});
+});
+</script>
+<script type="text/javascript">
+$('.myMenu').hover(function() {
+	$(this).children('ul').stop(true, false, true).slideToggle(300);
+});
+</script>
+
+</body>
+{% endblock content %}

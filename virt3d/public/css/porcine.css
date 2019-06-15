@@ -1,0 +1,59 @@
+#at_links {
+    text-align: center;
+		padding: 0px;
+		margin: 0px 0px 20px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+		
+}
+#anatomy_type {
+    font-size: 125%;
+    background-color: #666;
+    border-top: 10px solid #333;
+}
+.at_title h3 {
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+}
+
+.boneInformation
+{
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.scroll-table {
+    display: inline-block;
+    height: 200px;
+    line-height: 20px;
+    overflow: scroll;
+}
+.fixed-wrapper {
+    display: inline-block;
+    position: absolute;
+    width: inherit;
+    top: 0;
+    left: 0;
+}
+
+.fixed {
+
+   /* position: absolute; /* effectively fixed */
+    width: scrolltable.width;   
+    display: table-header-group;     
+
+}
+
+.embdVideo
+{
+    display: block;
+    margin: auto;
+}
+html,body { height: 100%; }
+

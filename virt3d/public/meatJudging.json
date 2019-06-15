@@ -1,0 +1,77 @@
+[{
+	"id": 120,
+	"name": "Beef Briskets",
+	"allSets": [{
+		"set": [{
+			"uri": "0fbdfa8996b543bfa0f2a0e8ffc3071d",
+			"grade": "1"
+		}, {
+			"uri": "2e4d85fb075b495b9f9234a155722db4",
+			"grade": "3"
+		}, {
+			"uri": "e4c3859d38c5432e95a79f830ee4442d",
+			"grade": "2"
+		}, {
+			"uri": "a1f11a4aba344a52be0e5a55ee8ca752",
+			"grade": "4"
+		}],
+		"hints": "hints120_1",
+		"reasons": "reasons120_1"
+	}, {
+		"set": [{
+			"uri": "0fbdfa8996b543bfa0f2a0e8ffc3071d",
+			"grade": "4"
+		}, {
+			"uri": "2e4d85fb075b495b9f9234a155722db4",
+			"grade": "2"
+		}, {
+			"uri": "e4c3859d38c5432e95a79f830ee4442d",
+			"grade": "1"
+		}, {
+			"uri": "a1f11a4aba344a52be0e5a55ee8ca752",
+			"grade": "3"
+		}],
+		"hints": "hints120_2",
+		"reasons": "reasons120_2"
+	}]
+}, {
+	"id": 108,
+	"name": "Beef2",
+	"allSets": [{
+		"set": [{
+			"uri": "539b39c3575244f488402c314760067b",
+			"grade": "3"
+		}, {
+			"uri": "539b39c3575244f488402c314760067b",
+			"grade": "1"
+		}, {
+			"uri": "539b39c3575244f488402c314760067b",
+			"grade": "4"
+		}, {
+			"uri": "539b39c3575244f488402c314760067b",
+			"grade": "2"
+		}],
+		"hints": "hints108_1",
+		"reasons": "reasons108_1"
+	}]
+}, {
+	"id": 109,
+	"name": "Beef3",
+	"allSets": [{
+		"set": [{
+			"uri": "00c30f8890334d0babd0ac7e268ae8d4",
+			"grade": "2"
+		}, {
+			"uri": "539b39c3575244f488402c314760067b",
+			"grade": "1"
+		}, {
+			"uri": "a657a0a2786042f78ea62ddc096e9afe",
+			"grade": "4"
+		}, {
+			"uri": "0b2e9385f33a407cab172ae1a110c357",
+			"grade": "3"
+		}],
+		"hints": "hints109_1",
+		"reasons": "reasons109_1"
+	}]
+}]

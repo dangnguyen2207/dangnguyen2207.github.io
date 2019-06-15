@@ -1,0 +1,44 @@
+[{
+	"id": "100",
+	"parentID": "-1",
+	"text": "Beef",
+	"uri": "e53edaa0ddf343e4800ede89eebb5825",
+	"subMenuWidth": "250px"
+}, {
+	"id": "101",
+	"parentID": "100",
+	"text": "Prime Rib",
+	"uri": "dff55e49fcfd47a8b04cff0aa7945935",
+	"subMenuWidth": "250px"
+}, {
+	"id": "102",
+	"parentID": "100",
+	"text": "Sirloin Flap",
+	"uri": "b8a57180b1094a7cbe091dda15a5849b"
+}, {
+	"id": "103",
+	"parentID": "102",
+	"text": "Chuck",
+	"uri": "a657a0a2786042f78ea62ddc096e9afe"
+}, {
+	"id": "104",
+	"parentID": "101",
+	"text": "Boneless Brisket",
+	"uri": "3f26e3a2fc7c4549990b5509fa5cb727"
+}, {
+	"id": "105",
+	"parentID": "101",
+	"text": "Brisket",
+	"uri": "0b2e9385f33a407cab172ae1a110c357",
+	"subMenuWidth": "200px"
+}, {
+	"id": "106",
+	"parentID": "105",
+	"text": "Brisket Bone",
+	"uri": "41a60ef34b634bbc8361ba70dd3e1443"
+}, {
+	"id": "107",
+	"parentID": "100",
+	"text": "Short Loin",
+	"uri": "3a1e126a3ac24ea38309c11eb671c792"
+}]

@@ -1,0 +1,596 @@
+﻿
+/*applied to the sub menu. Sets the sub menu's background*/
+.jqx-menu-dropdown
+{
+    left: 100%;
+    margin: 0px;
+    padding: 0px;
+    right: 0;
+    overflow: hidden;
+    display: none;
+    float: none;
+    width: 150px;
+    border-style: solid;
+    border-width: 1px;
+    text-align: left;
+    padding: 2px;
+}
+/*applied to the sub menu's ul elements.*/
+.jqx-menu-dropdown ul
+{
+   box-shadow: 2px 2px 15px 0 rgba(0,0,0, 0.5);
+}
+/*applied to the menu's ul elements.*/
+.jqx-menu ul
+{
+    left: 100%;
+    margin: 0px;
+    padding: 2px;
+    right: 0;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+}
+/*applied to the menu's li elements.*/
+.jqx-menu li, .jqx-menu-dropdown li
+{
+    line-height: 1.3 !important;
+}
+/*applied to the top level menu items.*/
+.jqx-menu-item-top
+{
+    border: 1px solid transparent;
+    text-indent: 0;
+    list-style: none;
+    padding: 4px 8px 4px 8px;
+    left: 100%;
+    overflow: hidden;
+    background-color: #d00000;
+    right: 0;
+    margin: 0px 1px 0px 1px;
+    cursor: pointer;
+}
+/*applied to the sub menu items.*/
+.jqx-menu-item
+{
+    border: 1px solid transparent;
+    text-indent: 0;
+    list-style: none;
+    padding: 4px 8px 4px 8px;
+    margin: 1px;
+    float: none;
+    overflow: hidden;
+    left: 100%;
+    color: inherit;
+    right: 0;
+    text-align: left;
+    cursor: pointer;
+    *color: expression(this.parentNode.currentStyle['color']);     
+}
+/*applied to a sub menu item when the mouse is over the item.*/
+.jqx-menu-item-hover
+{
+    color: inherit;
+    right: 0;
+    list-style: none;
+    margin: 1px;
+    left: 100%;
+    padding: 4px 8px 4px 8px;
+    text-align: left;
+    cursor: pointer;
+    *color: expression(this.parentNode.currentStyle['color']);     
+}
+/*applied to a top-level menu item when the mouse is over it.*/
+.jqx-menu-item-top-hover
+{
+    color: inherit;
+    right: 0;
+    list-style: none;
+    margin: 0px 1px 0px 1px;
+    left: 100%;
+    padding: 4px 8px 4px 8px;
+    top: 50%;
+    cursor: pointer;
+    *color: expression(this.parentNode.currentStyle['color']);     
+}
+/*applied to a sub menu item when its sub menu is opened.*/
+.jqx-menu-item-selected
+{
+    right: 0;
+    list-style: none;
+    margin: 1px;
+    left: 100%;
+    padding: 4px 8px 4px 8px;
+    text-align: left;
+    cursor: pointer;
+    *color: expression(this.parentNode.currentStyle['color']);     
+}
+
+<<<<<<< HEAD
+/*applied to all widgets*/
+.jqx-widget{-moz-box-sizing: content-box; box-sizing: content-box; -ms-touch-action: none; zoom: 1 !important; color: #000000; -moz-background-clip: padding; background-clip: padding-box; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-appearance: none; -webkit-background-clip: padding-box; direction: ltr !important; -webkit-tap-highlight-color: rgba(0,0,0,0); font-family: Verdana,Arial,sans-serif; font-style: normal; font-size: 13px;}
+
+.jqx-item{-ms-touch-action: none; -moz-box-sizing: content-box; box-sizing: content-box;  color: inherit; -webkit-text-size-adjust: none;}
+
+/*applied to containers to set a background and border color. Tabs, NavigationBar, Calendar content.*/
+.jqx-widget-content {-moz-box-sizing: content-box; box-sizing: content-box; -ms-touch-action: none; -moz-background-clip: padding; -webkit-text-size-adjust: none; background-clip: padding-box; -webkit-background-clip: padding-box; -webkit-tap-highlight-color: rgba(0,0,0,0); font-family: Verdana,Arial,sans-serif; font-style: normal; font-size: 13px; border-color: #c7c7c7; background: #fff; }
+/*applied to header areas. Tabs, Menu, Window, Calendar.*/
+.jqx-widget-header {-moz-box-sizing: content-box; box-sizing: content-box; -ms-touch-action: none;-moz-background-clip: padding; -webkit-text-size-adjust: none; background-clip: padding-box; -webkit-background-clip: padding-box; -webkit-tap-highlight-color: rgba(0,0,0,0); border-color: #c5c5c5; background: #e8e8e8; }
+=======
+}
+/*applied to a top-level menu item when its sub menu is opened.*/
+.jqx-menu-item-top-selected
+{
+    right: 0;
+    list-style: none;
+    margin: 0px 1px 0px 1px;
+    left: 100%;
+    padding: 4px 8px 4px 8px;
+    cursor: pointer;
+}
+/*applied to the menu separator items.*/
+.jqx-menu-item-separator
+{
+    text-indent: 0;
+    background-color: #ddd;
+    border: none;
+    list-style: none;
+    height: 1px;
+    line-height:0 !important;
+    padding: 0px;
+    margin: 1px 2px 1px 2px;
+    float: none;
+    overflow: hidden;
+    left: 100%;
+    color: inherit;
+    right: 0;
+    font-size: 1px;
+}
+/*applied to a sub menu item when it has sub menu items. Displays right arrow icon.*/
+.jqx-menu-item-arrow-right
+{
+    background-image: url(images/icon-right.png);
+}
+/*applied to a sub menu item when it has sub menu items. Displays down arrow icon.*/
+.jqx-menu-item-arrow-down
+{
+    background-image: url(images/icon-down.png);
+}
+/*applied to a sub menu item when it has sub menu items. Displays up arrow icon.*/
+.jqx-menu-item-arrow-up
+{
+    background-image: url(images/icon-up.png);
+}
+.jqx-menu-minimized {
+    position: relative;
+}
+.jqx-menu-title {
+    position: relative;
+    float: right;
+    margin-top: 4px;
+    padding-top: 4px;
+    padding-right: 20px;
+}
+.jqx-menu-minimized-button
+{
+    background-image: url('images/icon-menu-minimized.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 24px;
+    width: 24px;
+    padding: 0px;
+    margin-left: 7px;
+    margin-top: 4px;
+    float : left;
+}
+.jqx-menu-ul-minimized {
+    display: block!important;
+    width: auto !important;
+}
+.jqx-menu-ul-minimized ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow   : none !important;
+    -o-box-shadow     : none !important;
+    box-shadow        : none !important;
+}
+.jqx-menu-minimized li:last-child {
+    padding-bottom: 0px;
+    margin: 0px;
+}
+.jqx-menu-item-arrow-right, .jqx-menu-item-arrow-down, .jqx-menu-item-arrow-up, .jqx-menu-item-arrow-right {
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    padding-right: 0px;
+    margin-right: -8px;
+    width: 17px;
+    height: 15px;
+}
+/*applied to a sub menu item when it has sub menu items. Displays left arrow icon.*/
+.jqx-menu-item-arrow-left
+{
+    padding-right: 0px;
+    padding-left: 5px;
+    width: 17px;
+    height: 15px;
+    background-image: url(images/icon-left.png);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+/*applied to a sub menu item when it has sub menu items and its sub menu is opened. Displays right arrow icon.*/
+.jqx-menu-item-arrow-right-selected
+{
+    background-image: url(images/icon-right.png);
+}
+/*applied to a sub menu item when it has sub menu items and its sub menu is opened. Displays down arrow icon.*/
+.jqx-menu-item-arrow-down-selected
+{
+    background-image: url(images/icon-down.png);
+}
+/*applied to a sub menu item when it has sub menu items and its sub menu is opened. Displays up arrow icon.*/
+.jqx-menu-item-arrow-up-selected
+{
+    background-image: url(images/icon-up.png);
+}
+.jqx-menu-item-arrow-right-selected, .jqx-menu-item-arrow-up-selected, .jqx-menu-item-arrow-down-selected, .jqx-menu-item-arrow-top-right {
+    padding-right: 0px;
+    margin-right: -8px;
+    width: 17px;
+    height: 15px;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+/*applied to a top-level menu item when it has sub menu items. Displays right arrow icon.*/
+.jqx-menu-item-arrow-top-right
+{
+    background-image: url(images/icon-right.png);
+}
+/*applied to a sub menu item when it has sub menu items and its sub menu is opened. Displays left arrow icon.*/
+.jqx-menu-item-arrow-left-selected
+{
+    background-image: url(images/icon-left.png);
+}
+/*applied to a top-level menu item when it has sub menu items. Displays left arrow icon.*/
+.jqx-menu-item-arrow-top-left
+{
+    background-image: url(images/icon-left.png);
+}
+.jqx-menu-item-arrow-left-selected, .jqx-menu-item-arrow-top-left {
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    padding-right: 0px;
+    padding-left: 5px;
+    width: 17px;
+    height: 15px;
+}
+/*applied to the anchor elements*/
+.jqx-menu-item a:link, .jqx-menu-item a:visited, .jqx-menu-item a:hover, .jqx-menu-item-top a:link, .jqx-menu-item-top a:visited, .jqx-menu-item-top a:hover
+{
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    background-color: transparent;
+    *color: expression(this.parentNode.currentStyle['color']);     
+}
+
+/*applied to the menu widget when it is disabled.*/
+.jqx-menu-disabled
+{
+    cursor: default;
+}
+/*applied to the anchor elements of all disabled menu items.*/
+.jqx-menu-disabled a:link
+{
+    cursor: default;
+    text-decoration: none;
+}
+.jqx-menu-disabled a:visited
+{
+    cursor: default;
+    text-decoration: none;
+}
+.jqx-menu-disabled a:hover
+{
+    cursor: default;
+}
+.jqx-menu-dropdown
+{
+    right: -1px;
+}
+
+/*jqxtree Style*/
+.jqx-tree
+{
+    left: 100%;
+    right: 0;
+    float: none;
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: left;
+    outline: none;
+    white-space: nowrap;
+    line-height: 14px !important;
+}
+/*applied to the jqxTree root UL element.*/
+.jqx-tree-dropdown-root
+{
+    left: 100%;
+    padding: 0px 5px 0px 5px;
+    right: 0;
+    display: block;
+    float: none;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #fff;
+    text-align: left;
+    outline: none;
+    white-space: nowrap;
+    margin: 0px;
+}
+.jqx-tree-dropdown-root-rtl {
+    padding: 0px 5px 0px 0px;
+    text-align: right;
+    float: right;
+    margin: 0px;
+}
+
+/*applied to the jqxTree UL elements.*/
+.jqx-tree-dropdown
+{
+    left: 100%;
+    margin: 0px;
+    padding: 0px 0px 0px 10px;
+    right: 0;
+     display: block;
+    float: none;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px;
+    border-color: transparent;
+    text-align: left;
+    outline: none;
+}
+.jqx-tree-dropdown-rtl {
+   padding: 3px 0px 0px 0px;
+   text-align: right;
+}
+
+/*applied to a tree item.*/
+.jqx-tree-item
+{
+    border: 1px solid transparent;
+    text-indent: 0;
+    list-style: none;
+    padding: 3px;
+    margin: 0px;
+    float: none;
+    overflow: hidden;
+    left: 100%;
+    right: 0;
+    text-align: left;
+    cursor: default;
+    text-decoration: none;
+}
+/*applied to the jqxTree LI elements.*/
+.jqx-tree-item-li
+{
+    text-indent: 0;
+    background-color: transparent;
+    border: 0px solid transparent;
+    list-style: none;
+    left: 100%; 
+    right: 0;
+    text-align: left;
+    outline: none;
+    margin: 0px;
+    margin-top: 1px;
+    padding: 0px;
+}
+/*applied to the last LI elements in an UL element.*/
+.jqx-tree-item-u-last
+{
+    margin: 0px 0px 0px 0px;
+}
+/*applied to a tree item when the mouse is over the item.*/
+.jqx-tree-item-hover
+{
+    color: inherit;
+    right: 0;
+    padding: 3px;
+    margin: 0px;
+    list-style: none;
+    left: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*applied to a tree item when the item is selected.*/
+.jqx-tree-item-selected
+{
+    color: inherit;
+    right: 0;
+    padding: 3px;
+    margin: 0px;
+    list-style: none;
+    left: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.jqx-tree-item-rtl {
+    text-align: right;
+}
+.jqx-tree-item-li-rtl {
+    text-align: right;
+}
+/*applied to the anchor element of a tree item.*/
+.jqx-tree-item a:link, .jqx-tree-item a:visited
+{
+    text-indent: 0;
+    background-color: transparent;
+    border: 0px solid transparent;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    float: none;
+    overflow: hidden;
+    left: 100%;
+    color: inherit;
+    right: 0;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+.jqx-tree-item-selected, .jqx-tree-item-hover a:hover
+{
+    color: inherit;
+}
+.jqx-tree-item-selected, .jqx-tree-item-hover a:visited
+{
+    color: inherit;
+}
+
+/*applied to a tree item when the item is disabled.*/
+.jqx-tree-item-disabled
+{
+
+}
+/*applied to a tree item when it has sub items and is collapsed. Displays an arrow icon next to the item.*/
+.jqx-tree-item-arrow-collapse, .jqx-tree-item-arrow-collapse-hover
+{
+    padding-right: 0px;
+    width: 17px;
+    height: 17px;
+    background-image: url(images/icon-right.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.jqx-tree-item-arrow-collapse-rtl, .jqx-tree-item-arrow-collapse-hover-rtl {
+    background-image: url(images/icon-left.png);
+}
+
+/*applied to a tree item when it has sub items and is expanded. Displays an arrow icon next to the item.*/
+.jqx-tree-item-arrow-expand, .jqx-tree-item-arrow-expand-hover
+{
+    padding-right: 0px;
+    width: 17px;
+    height: 17px;
+    background-image: url(images/icon-down.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+/*applied to the tree when it is disabled.*/
+.jqx-tree-disabled
+{
+    cursor: default;
+}
+/*applied to the anchor elements in a tree when it is disabled.*/
+.jqx-tree-disabled a:link
+{
+    cursor: default;
+    text-decoration: none;
+}
+.jqx-tree-disabled a:visited
+{
+    cursor: default;
+    text-decoration: none;
+}
+.jqx-tree-disabled a:hover
+{
+    cursor: default;
+}
+
+
+/*jqxTabs*/
+.jqx-tabs
+{
+    outline: none;
+    margin: 0 0 0 0;
+    padding: 0px;
+    overflow: hidden;
+    background: transparent;
+    border: 1px solid transparent;
+}
+/*applied to the tab close button.*/
+.jqx-tabs-close-button
+{
+    outline: none;
+    background-image: url(images/close.png);
+    cursor: pointer;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    position: relative;
+    left: 5px;
+}
+/*applied to the tab close button when the tab is selected.*/
+.jqx-tabs-close-button-selected
+{
+    outline: none;
+    background-image: url(images/close.png);
+    cursor: pointer;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+/*applied to the tab close button when the mouse is over the tab.*/
+.jqx-tabs-close-button-hover
+{
+    outline: none;
+    background-image: url(images/close.png);
+    cursor: pointer;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.jqx-tabs-close-button, .jqx-tabs-close-button-selected, .jqx-tabs-close-button-hover{background-repeat:no-repeat;  background-position:center;}
+/*applied to the tab's left scroll arrow.*/
+.jqx-tabs-arrow-left
+{
+    outline: none;
+    position: relative;
+    z-index: 15;
+    float: left;
+    cursor: pointer;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-image: url('images/icon-left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*applied to the tab's right scroll arrow.*/
+.jqx-tabs-arrow-right
+{
+    outline: none;
+    position: relative;
+    z-index: 15;
+    background-image: url('images/icon-right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    cursor: pointer;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.jqx-tabs-arrow-background
+{
+    background: #eeeeee;
+}
+
+
+/*applied to all widgets*/
+.jqx-widget{-moz-box-sizing: content-box; box-sizing: content-box; -ms-touch-action: none; zoom: 1 !important; color: #000000; -moz-background-clip: padding; background-clip: padding-box; -webkit-text-size-adjust: none; -ms-text-size-adjust: none; -webkit-appearance: none; -webkit-background-clip: padding-box; direction: ltr !important; -webkit-tap-highlight-color: rgba(0,0,0,0); font-family: Verdana,Arial,sans-serif; font-style: normal; font-size: 13px;}
+
+.jqx-item{-ms-touch-action: none; -moz-box-sizing: content-box; box-sizing: content-box;  color: inherit; -webkit-text-size-adjust: none;}
+
+/*applied to containers to set a background and border color. Tabs, NavigationBar, Calendar content.*/
+.jqx-widget-content {-moz-box-sizing: content-box; box-sizing: content-box; -ms-touch-action: none; -moz-background-clip: padding; -webkit-text-size-adjust: none; background-clip: padding-box; -webkit-background-clip: padding-box; -webkit-tap-highlight-color: rgba(0,0,0,0); font-family: Verdana,Arial,sans-serif; font-style: normal; font-size: 13px; border-color: none; background: #d00000; color: white; }
+/*applied to header areas. Tabs, Menu, Window, Calendar.*/
+.jqx-widget-header {-moz-box-sizing: content-box; box-sizing: content-box; -ms-touch-action: none;-moz-background-clip: padding; -webkit-text-size-adjust: none; background-clip: padding-box; -webkit-background-clip: padding-box; -webkit-tap-highlight-color: rgba(0,0,0,0); border-color: none; background: #d00000; color: white; }
+
+>>>>>>> origin/Model_Swapping

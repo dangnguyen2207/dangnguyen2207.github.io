@@ -1,0 +1,204 @@
+table.primary {
+    /* Primary Table */
+    border: none;
+
+    thead {
+        border: 1px solid fadeout(@brand,20%);
+    }
+
+    tr th {
+        color: #fff;
+        background: fadeout(@brand,20%);
+        border-top: none;
+        border-bottom: 3px solid darken(@brand,10%);
+
+        a {
+            color: #fff;
+        }
+    }
+
+    tbody {
+        border: 1px solid lighten(@brand,50%);
+
+        tr {
+            &:nth-of-type(even) {
+                background-color: lighten(@brand,58%);
+            }
+        }
+
+        td {
+            border-color: lighten(@brand,50%);
+        }
+    }
+
+    @media @bp-under768w {
+	    &.wdn_responsive_table tbody td:first-child {
+            color: #fff;
+            background: fadeout(@brand,20%);
+    	}
+    }
+}
+
+table.cool {
+    /* Cool Table */
+    border: none;
+
+    thead {
+        border: 1px solid @triad;
+    }
+
+    tr th {
+        color: #fff;
+        background: @triad;
+        border-top: none;
+        border-bottom: 3px solid darken(@triad,5%);
+
+        a {
+            color: #fff;
+        }
+    }
+
+    tbody {
+        border: 1px solid lighten(@dark-triad,45%);
+
+        tr {
+            &:nth-of-type(even) {
+                background-color: lighten(@dark-triad,58%);
+            }
+        }
+
+        td {
+            border-color: lighten(@dark-triad,45%);
+        }
+    }
+
+    @media @bp-under768w {
+        &.wdn_responsive_table tbody td:first-child {
+            color: darken(@light-triad,70%);
+            background: fadeout(@light-triad,20%);
+        }
+    }
+}
+
+table.soothing {
+    /* Soothing Table */
+    border: none;
+
+    thead {
+        border: 1px solid @complement;
+    }
+
+    tr th {
+        color: #fff;
+        background: @complement;
+        border-top: none;
+        border-bottom: 3px solid darken(@complement,5%);
+
+        a {
+            color: #fff;
+        }
+    }
+
+    tbody {
+        border: 1px solid lighten(@dark-complement,50%);
+
+        tr {
+            &:nth-of-type(even) {
+                background-color: lighten(@dark-complement,64%);
+            }
+        }
+
+        td {
+            border-color: lighten(@dark-complement,50%);
+        }
+    }
+
+    @media @bp-under768w {
+		&.wdn_responsive_table tbody td:first-child {
+            color: #fff;
+            background: fadeout(@dark-complement,20%);
+        }
+    }
+}
+
+table.neutral {
+    /* Neutral Table */
+    border: none;
+
+    thead {
+        border: 1px solid fadeout(@neutral,20%);
+    }
+
+    tr th {
+        color: #fff;
+        background: fadeout(@neutral,20%);
+        border-top: none;
+        border-bottom: 3px solid @dark-neutral;
+
+        a {
+            color: #fff;
+        }
+    }
+
+    tbody {
+        border: 1px solid lighten(@dark-neutral,60%);
+
+        tr {
+            &:nth-of-type(even) {
+                background-color: lighten(@dark-neutral,75%);
+            }
+        }
+
+        td {
+            border-color: lighten(@dark-neutral,60%);
+        }
+    }
+
+    @media @bp-under768w {
+		&.wdn_responsive_table tbody td:first-child {
+            color: @dark-neutral;
+            background: fadeout(@neutral,20%);
+        }
+    }
+}
+
+table.energetic {
+    /* Energetic Table */
+    border: none;
+
+    thead {
+        border: 1px solid @energetic;
+    }
+
+    tr th {
+        color: #fff;
+        background: @energetic;
+        border-top: none;
+        border-bottom: 3px solid darken(@energetic,5%);
+
+        a {
+            color: #fff;
+        }
+    }
+
+    tbody {
+        border: 1px solid lighten(@dark-energetic,44%);
+
+        tr {
+            &:nth-of-type(even) {
+                background-color: lighten(@dark-energetic,55%);
+            }
+        }
+
+        td {
+            border-color: lighten(@dark-energetic,44%);
+        }
+    }
+
+    @media @bp-under768w {
+		&.wdn_responsive_table tbody td:first-child {
+            color: #000;
+            background: fadeout(@dark-energetic,20%);
+        }
+    }
+}
